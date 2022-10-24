@@ -18,7 +18,6 @@ function fakeForEach(callback, arr) {
     }
 
 }*/
-//----o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-oo-o-
 let lados =[10, 15, 3, 7];
 function calcular(arr, callback){
     let resultados = [];
