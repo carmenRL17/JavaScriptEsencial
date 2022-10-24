@@ -18,3 +18,23 @@ function fakeForEach(callback, arr) {
     }
 
 }*/
+//----o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-oo-o-
+let lados =[10, 15, 3, 7];
+function calcular(arr, callback){
+    let resultados = [];
+    for (let lado of arr){
+        resultados.push(callback(lado));
+    }
+    return resultados;
+}
+
+const calculoPerimetroCuadro = (lado) => {
+    return lado * 4;
+
+}
+const calcularAreaCuadrado =(lado) => {
+    return lado * lado;
+}
+
+const perimetros = calcular(lados, calculoPerimetroCuadro);
+const areas = calcular(lados, calcularAreaCuadrado);
